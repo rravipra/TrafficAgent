@@ -31,26 +31,27 @@ Create a Virtual Environment:
 
 Open the integrated terminal in VSCode (or your preferred terminal) and run:
 
-```bash
-Copy
-python -m venv venv
-Activate the Virtual Environment:
+   ```bash
+   Copy
+   python -m venv venv
+   Activate the Virtual Environment:
 
 On Windows (Command Prompt):
 
-```bash
-Copy
-.\venv\Scripts\activate
-On Windows (PowerShell):
+   ```bash
+   Copy
+   .\venv\Scripts\activate
+   On Windows (PowerShell):
 
-```powershell
-Copy
-.\venv\Scripts\Activate.ps1
-On macOS/Linux:
+   ```powershell
+   Copy
+   .\venv\Scripts\Activate.ps1
 
-```bash
-Copy
-source venv/bin/activate
+   On macOS/Linux:
+
+   ```bash
+   Copy
+   source venv/bin/activate
 You should see (venv) at the beginning of your terminal prompt.
 
 Install Dependencies:
