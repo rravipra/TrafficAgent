@@ -11,7 +11,8 @@ A multi-agent system for intelligent traffic signal control, smart vehicle commu
 ```bash
 git clone <repository_url>
 cd <repository_directory>
-2. Create and Activate a Virtual Environment
+
+### 2. Create and Activate a Virtual Environment
 Create the environment:
 
 bash
