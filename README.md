@@ -26,28 +26,29 @@ This project simulates a multi-agent system for real-time urban traffic manageme
    ```bash
    git clone <repository_url>
    cd <repository_directory>
+   
 Create a Virtual Environment:
 
 Open the integrated terminal in VSCode (or your preferred terminal) and run:
 
-bash
+```bash
 Copy
 python -m venv venv
 Activate the Virtual Environment:
 
 On Windows (Command Prompt):
 
-bash
+```bash
 Copy
 .\venv\Scripts\activate
 On Windows (PowerShell):
 
-powershell
+```powershell
 Copy
 .\venv\Scripts\Activate.ps1
 On macOS/Linux:
 
-bash
+```bash
 Copy
 source venv/bin/activate
 You should see (venv) at the beginning of your terminal prompt.
@@ -56,7 +57,7 @@ Install Dependencies:
 
 With the virtual environment activated, run:
 
-bash
+```bash
 Copy
 pip install -r requirements.txt
 Configuration
@@ -69,14 +70,14 @@ Create a .env File:
 
 In the project root, create a file named .env and add your API key:
 
-env
+```env
 Copy
 API_KEY=your_actual_api_key_here
 Configure config.py:
 
 Ensure config.py loads the API key from the .env file. Your config.py should look similar to this:
 
-python
+```python
 Copy
 import os
 from dotenv import load_dotenv
@@ -92,7 +93,7 @@ Security:
 The provided .gitignore file ignores both .env (and optionally config.py) so that your API key isn’t committed to version control.
 
 Project Structure
-arduino
+```arduino
 Copy
 project/
 ├── README.md
@@ -109,13 +110,14 @@ project/
     ├── smart_vehicle_agent.py
     ├── drone_agent.py
     └── vehicle.py
+
 Running the Simulation
 Via Terminal
 Activate the Virtual Environment.
 
 Run the simulation:
 
-bash
+```bash
 Copy
 python simulation.py
 Using VSCode
@@ -127,7 +129,7 @@ Choose Python: Select Interpreter and select the one from your venv.
 
 Configure Debugging (Optional): Create a launch.json file with the following configuration:
 
-json
+```json
 Copy
 {
     "version": "0.2.0",
@@ -161,6 +163,3 @@ Fairness:
 The FairnessAgent tracks intersection wait times to ensure equitable traffic signal distribution.
 
 The simulation outputs color-coded, formatted text in the terminal. Signal light statuses are displayed with colored emojis (🟢, 🟡, 🔴) and clear messages from each agent.
-
-License
-This project is licensed under the MIT License.
