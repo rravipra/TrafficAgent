@@ -120,7 +120,6 @@ Select Python: Select Interpreter and choose the one from your venv.
 (Optional) Create a launch.json for debugging:
 
 ```json
-Copy
 {
     "version": "0.2.0",
     "configurations": [
