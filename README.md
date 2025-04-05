@@ -11,36 +11,48 @@ A multi-agent system for intelligent traffic signal control, smart vehicle commu
 ```bash
 git clone <repository_url>
 cd <repository_directory>
+```
 
 ### 2. Create and Activate a Virtual Environment
 Create the environment:
 
-bash
+```bash
 Copy
 python -m venv venv
-Activate the environment:
+```
+
+### 3. Activate the environment:
 
 On Windows (Command Prompt):
 
-bash
+```bash
 Copy
 .\venv\Scripts\activate
+```
+
 On Windows (PowerShell):
 
-powershell
+```powershell
 Copy
 .\venv\Scripts\Activate.ps1
+```
+
 On macOS/Linux:
 
-bash
+```bash
 Copy
 source venv/bin/activate
+```
+
 You should see (venv) at the beginning of your terminal prompt.
 
-3. Install Dependencies
-bash
+### 4. Install Dependencies
+
+```bash
 Copy
 pip install -r requirements.txt
+```
+
 🔐 Configuration
 Setting Up the API Key
 Obtain a TomTom API Key:
@@ -55,7 +67,7 @@ API_KEY=your_actual_api_key_here
 Configure config.py:
 Ensure config.py looks like this:
 
-python
+```python
 Copy
 import os
 from dotenv import load_dotenv
@@ -66,10 +78,12 @@ API_KEY = os.getenv("API_KEY")
 DATA_FILE = 'traffic_data.csv'
 LAST_RETRAIN_FILE = 'last_retrain.txt'
 RETRAIN_INTERVAL_SECONDS = 3600 * 24 * 14
+```
+
 ✅ The provided .gitignore file is already set up to exclude .env and (optionally) config.py to keep your API key secure.
 
 📁 Project Structure
-plaintext
+```plaintext
 Copy
 project/
 ├── README.md
@@ -86,15 +100,19 @@ project/
     ├── smart_vehicle_agent.py
     ├── drone_agent.py
     └── vehicle.py
+```
+
 ▶️ Running the Simulation
 Via Terminal
 Activate the virtual environment.
 
 Run the simulation:
 
-bash
+```bash
 Copy
 python simulation.py
+```
+
 Using VSCode
 Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P on macOS).
 
@@ -102,7 +120,7 @@ Select Python: Select Interpreter and choose the one from your venv.
 
 (Optional) Create a launch.json for debugging:
 
-json
+```json
 Copy
 {
     "version": "0.2.0",
@@ -117,4 +135,6 @@ Copy
         }
     ]
 }
+```
+
 Press F5 or click the Run icon to start the simulation.
