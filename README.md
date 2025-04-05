@@ -84,7 +84,6 @@ RETRAIN_INTERVAL_SECONDS = 3600 * 24 * 14
 
 📁 Project Structure
 ```plaintext
-Copy
 project/
 ├── README.md
 ├── .gitignore
